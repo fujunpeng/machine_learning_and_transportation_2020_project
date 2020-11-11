@@ -3,7 +3,7 @@
 1.Dataset:  
 　In total, we used two datasets of Boston housing prediction.  
 　The first dataset we used could be download at https://github.com/udacity/machine-learning/tree/master/projects . There were 3 features and 1 target variable 'MEDV', which had 489 data points for each column.
-  The second dataset we used could be download at https://github.com/godfanmiao/DIY_ML_Systems_with_Python_2nd_Edition . There were 13 features and 1 target variable 'MEDV',     which had 506 data points for each column.
+  The second dataset we used could be download at https://github.com/godfanmiao/DIY_ML_Systems_with_Python_2nd_Edition . There were 13 features and 1 target variable 'MEDV',  which had 506 data points for each column.
   We would like to know the infulence of the dataset on the fit results by comparing the accuracy and error of the two datasets under different methods separately.   
 2.Method:  
 　　i.Data reading and data pre-processing:  
@@ -11,7 +11,7 @@
 We supposed X as the feature columns and y as the target variable, and we set the test_size to be 0.2 that meant 80% of the data were used to train and 20% of the data were used to test.Then we used StandardScaler() to standardize the features because the accuracy of the fit results was improved when it was standardized.  
 　　ii.Regression:  
 　　We have used 7 based methods to fit the datasets: LR, SVR, KNR, DTR, RFR, GBR, MLPR.
-The process of regression was simple. First, import packages. Second, use the fit function to train data and the predict function to compare with the test set. At last, use 　　r2_score to calculate the accuracy of the method.
+The process of regression was simple. First, import packages. Second, use the fit function to train data and the predict function to compare with the test set. At last, use 　r2_score to calculate the accuracy of the method.
 However, not all methods were so simple. In SVR model, we had to use different kinds of kernel function to custom the fit function, such as 'sigmoid', 'poly', 'linear', 'rbf', etc. Then a very strange scene appeared in Dataset1. No matter how I set up the kernel function，the r2 score was always the negative number. I've looked up the 　　information and it indicates that setting the parameters to adjust the model yields a fit that is also more erroneous than a random guess at a mean. It was really a terrible situation, and SVR model did not fit the Dataset1 actually. But once the features were enough, such as Dataset2, this problem would be solved.
 Besides, in MLPRegressor model, we had to set the hidden_layer_sizes. It did take a long time to optimize the function, but we haven't found the best one yet because the time was not enough at last. In additon, if max_iter was too little,there was a convergence warning that means the not best fitting, and 9000 was the edge.
 After completing all the steps, it was clear that the MAE and MSE which means the errors of Dataset2 was extremely less than the MAE and MSE of Dataset1. It meant that the results depended on the numbers of features heavily.
