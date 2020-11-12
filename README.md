@@ -21,6 +21,7 @@ The comparison of the accuracy of all methods using in Dataset1 and Dataset2 wou
 　　i.Bar gragh  
 　　The first one was the bar gragh. It recorded the score of prediction using different methods. As we can see, accuracy scores of the Dataset1 could be ranked from highest to lowest as: 
     GBR＞RFR≈KNR＞MLPR＞DTR＞LR＞＞SVR.
+    ![image1](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image1.png)
     While accuracy scores of the Dataset2 could be ranked from highest to lowest as:
     GBR＞KNR＞RFR＞LR＞MLPR≈SVRpoly＞SVRlinear＞SVRrbf＞SVRsigmoid＞DTR.  
 　　ii.Comparison chart  
