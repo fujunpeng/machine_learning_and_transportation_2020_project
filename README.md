@@ -25,7 +25,8 @@ The comparison of the accuracy of all methods using in Dataset1 and Dataset2 wou
     
     While accuracy scores of the Dataset2 could be ranked from highest to lowest as:
     GBR＞KNR＞RFR＞LR＞MLPR≈SVRpoly＞SVRlinear＞SVRrbf＞SVRsigmoid＞DTR.  
-    ![image2](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image2.png)
+    ![image2](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image2.png)  
+    
 　　ii.Comparison chart  
 　　The second one was the comparison chart based on the prediction and the test set. From the charts, we could intuitively noticed those good results.  
   By the way, we ran into a problem when we were drawing these comparison chart. We found that using only the subplot() function would make each image very small and the spacing between them very small. We made the overall image larger by adding the 'figsize' parameter to the initial plt.figure() function, and added the plt.subplots_adjust() function after several subplot() functions to adjust the spacing between the images to the appropriate scale.
