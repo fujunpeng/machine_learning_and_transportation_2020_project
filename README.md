@@ -22,11 +22,43 @@ The comparison of the accuracy of all methods using in Dataset1 and Dataset2 wou
 　　The first one was the bar gragh. It recorded the score of prediction using different methods. As we can see, accuracy scores of the Dataset1 could be ranked from highest to lowest as: 
     GBR＞RFR≈KNR＞MLPR＞DTR＞LR＞＞SVR.
     ![image1](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image1.png)  
+Predicted versus real values are as follows：  
+![image3](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/tree/main/image/image3.png)  
+Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
 
-    While accuracy scores of the Dataset2 could be ranked from highest to lowest as:
+| Rank |               Regressors                | R-squared |      MSE       |    MAE    |
+| :--: | :-------------------------------------: | :-------: | :------------: | :-------: |
+|  1   |          RandomForestRegressor          | 0.826670  | 4086790650.00  | 45910.71  |
+|  2   |        GradientBoostingRegressor        | 0.824094  | 4147535115.52  | 49318.95  |
+|  3   |           KNeighborsRegressor           | 0.811214  | 4451202000.00  | 50442.85  |
+|  4   |              MLPRegressor               | 0.783812  | 5097287652.85  | 52776.75  |
+|  5   |            LinearRegression             | 0.706385  | 6922885233.55  | 64456.49  |
+|  6   |          DecisionTreeRegressor          | 0.685936  | 7405020000.00  | 66428.57  |
+|  7   | SupportVectorRegression(Linear  Kernel) | -0.003011 | 23649074830.10 | 122837.13 |
+|  8   |  SupportVectorRegression(Poly  Kernel)  | -0.004588 | 23686253724.46 | 123008.90 |
+|  9   | SupportVectorRegression(Sigmod  Kernel) | -0.007067 | 23744697050.01 | 123101.19 |
+|  10  |  SupportVectorRegression(RBF  Kernel)   | -0.007830 | 23762683915.53 | 123150.97 |  
+
+    While accuracy scores of the Dataset2 could be ranked from highest to lowest as:  
     GBR＞KNR＞RFR＞LR＞MLPR≈SVRpoly＞SVRlinear＞SVRrbf＞SVRsigmoid＞DTR.  
 ![image2](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image2.png)  
-    
+ Predicted versus real values are as follows：  
+![image4](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/tree/main/image/image4.png)  
+Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
+
+| Rank |               Regressors                | R-squared |    MSE    |   MAE    |
+| :--: | :-------------------------------------: | :-------: | :-------: | :------: |
+|  1   |        GradientBoostingRegressor        | 0.860479  | 11.905609 | 2.382734 |
+|  2   |           KNeighborsRegressor           | 0.794837  | 17.506945 | 2.646863 |
+|  3   |            LinearRegression             | 0.768270  | 19.773992 | 3.369037 |
+|  4   |  SupportVectorRegression(Poly  Kernel)  | 0.750436  | 21.295807 | 3.232939 |
+|  5   |              MLPRegressor               | 0.750210  | 21.315068 | 3.772093 |
+|  6   | SupportVectorRegression(Linear  Kernel) | 0.735268  | 22.590114 | 3.276773 |
+|  7   |  SupportVectorRegression(RBF  Kernel)   | 0.631065  | 31.481933 | 3.344833 |
+|  8   |          RandomForestRegressor          | 0.607798  | 33.467393 | 3.330882 |
+|  9   | SupportVectorRegression(Sigmod  Kernel) | 0.579997  | 35.839710 | 4.188697 |
+|  10  |          DecisionTreeRegressor          | 0.511331  | 41.699118 | 3.561765 |  
+
 　　ii.Comparison chart  
 　　The second one was the comparison chart based on the prediction and the test set. From the charts, we could intuitively noticed those good results.  
   By the way, we ran into a problem when we were drawing these comparison chart. We found that using only the subplot() function would make each image very small and the spacing between them very small. We made the overall image larger by adding the 'figsize' parameter to the initial plt.figure() function, and added the plt.subplots_adjust() function after several subplot() functions to adjust the spacing between the images to the appropriate scale.
