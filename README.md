@@ -41,8 +41,7 @@ Ranking of the regression predictive power of multiple classical regression mode
     While accuracy scores of the Dataset2 could be ranked from highest to lowest as:  
     GBR＞KNR＞RFR＞LR＞MLPR≈SVRpoly＞SVRlinear＞SVRrbf＞SVRsigmoid＞DTR.  
 ![image2](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image2.png)  
- Predicted versus real values are as follows：  
-![image4](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/tree/main/image/image4.png)  
+
 Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
 
 | Rank |               Regressors                | R-squared |    MSE    |   MAE    |
@@ -65,4 +64,4 @@ Ranking of the regression predictive power of multiple classical regression mode
     The comparison between the predicted and actual values based on Dataset2 is as follows：  
 ![image4](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/tree/main/image/image4.png)  
 
-    By the way, we ran into a problem when we were drawing these comparison chart. We found that using only the subplot() function would make each image very small and the spacing between them very small. We made the overall image larger by adding the 'figsize' parameter to the initial plt.figure() function, and added the plt.subplots_adjust() function after several subplot() functions to adjust the spacing between the images to the appropriate scale.
+  By the way, we ran into a problem when we were drawing these comparison chart. We found that using only the subplot() function would make each image very small and the spacing between them very small. We made the overall image larger by adding the 'figsize' parameter to the initial plt.figure() function, and added the plt.subplots_adjust() function after several subplot() functions to adjust the spacing between the images to the appropriate scale.
