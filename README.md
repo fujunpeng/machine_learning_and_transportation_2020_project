@@ -22,8 +22,7 @@ The comparison of the accuracy of all methods using in Dataset1 and Dataset2 wou
 　　The first one was the bar gragh. It recorded the score of prediction using different methods. As we can see, accuracy scores of the Dataset1 could be ranked from highest to lowest as: 
     GBR＞RFR≈KNR＞MLPR＞DTR＞LR＞＞SVR.
     ![image1](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image1.png)  
-Predicted versus real values are as follows：  
-![image3](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/tree/main/image/image3.png)  
+
 Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
 
 | Rank |               Regressors                | R-squared |      MSE       |    MAE    |
@@ -61,4 +60,9 @@ Ranking of the regression predictive power of multiple classical regression mode
 
 　　ii.Comparison chart  
 　　The second one was the comparison chart based on the prediction and the test set. From the charts, we could intuitively noticed those good results.  
-  By the way, we ran into a problem when we were drawing these comparison chart. We found that using only the subplot() function would make each image very small and the spacing between them very small. We made the overall image larger by adding the 'figsize' parameter to the initial plt.figure() function, and added the plt.subplots_adjust() function after several subplot() functions to adjust the spacing between the images to the appropriate scale.
+    The comparison between the predicted and actual values based on Dataset1 is as follows：  
+![image3](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/tree/main/image/image3.png)  
+    The comparison between the predicted and actual values based on Dataset2 is as follows：  
+![image4](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/tree/main/image/image4.png)  
+
+    By the way, we ran into a problem when we were drawing these comparison chart. We found that using only the subplot() function would make each image very small and the spacing between them very small. We made the overall image larger by adding the 'figsize' parameter to the initial plt.figure() function, and added the plt.subplots_adjust() function after several subplot() functions to adjust the spacing between the images to the appropriate scale.
