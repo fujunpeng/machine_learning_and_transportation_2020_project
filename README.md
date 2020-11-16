@@ -23,7 +23,7 @@ The comparison of the accuracy of all methods using in Dataset1 and Dataset2 wou
     GBR＞RFR≈KNR＞MLPR＞DTR＞LR＞＞SVR.
     ![image1](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image1.png)  
 
-Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
+　　Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
 
 | Rank |               Regressors                | R-squared |      MSE       |    MAE    |
 | :--: | :-------------------------------------: | :-------: | :------------: | :-------: |
@@ -42,7 +42,7 @@ Ranking of the regression predictive power of multiple classical regression mode
     GBR＞KNR＞RFR＞LR＞MLPR≈SVRpoly＞SVRlinear＞SVRrbf＞SVRsigmoid＞DTR.  
 ![image2](https://github.com/fujunpeng/machine_learning_and_transportation_2020_project/blob/main/image/image2.png)  
 
-Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
+　　Ranking of the regression predictive power of multiple classical regression models for the "Boston House Price Forecast" problem:  
 
 | Rank |               Regressors                | R-squared |    MSE    |   MAE    |
 | :--: | :-------------------------------------: | :-------: | :-------: | :------: |
